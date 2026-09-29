@@ -1,0 +1,40 @@
+body {
+    background-image: url("flowers.jpg");
+    background-repeat: no-repeat;
+    text-align: center;
+    color: rgb(251, 213, 59);
+}
+.long-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+    color: rgb(251, 213, 59);
+}
+.mosaic-text {
+    font-family: "Silkscreen", sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+
+    color: transparent;
+
+    background:
+        repeating-linear-gradient(
+            90deg,
+            #ff7eb3 0px,
+            #ff7eb3 8px,
+            #ffb6d9 8px,
+            #ffb6d9 16px,
+            #c77dff 16px,
+            #c77dff 24px,
+            #7dd3fc 24px,
+            #7dd3fc 32px
+        );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+}

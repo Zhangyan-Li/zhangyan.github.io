@@ -1,0 +1,21 @@
+body {
+    background-image: url("blue-sky.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: "Silkscreen";
+}
+a,
+a:visited,
+a:hover,
+a:active {
+    color: rgb(255, 157, 218);
+}
+.long-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}

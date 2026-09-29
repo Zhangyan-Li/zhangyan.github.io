@@ -1,0 +1,59 @@
+h1 {
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: "Silkscreen";
+    color: white;
+}
+h2 {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Silkscreen";
+    color: rgb(132, 83, 8);
+    background-color: rgb(253, 220, 29);
+    width: 400px;
+    height: 100px;
+    margin: 0 auto;
+}
+pre {
+    text-align: center;
+    color: rgb(154, 7, 7);
+}
+a,
+a:visited,
+a:hover,
+a:active {
+    color: red;
+}
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+
+    background-image:
+        linear-gradient(90deg,
+            transparent 50%,
+            rgba(255, 255, 255, 0.12) 50%
+        ),
+        linear-gradient(
+            transparent 50%,
+            rgba(255, 255, 255, 0.12) 50%
+        );
+
+    background-size: 30px 30px;
+
+    animation: pixelMove 2s linear infinite;
+
+    pointer-events: none;
+    z-index: 10;
+}
+
+@keyframes pixelMove {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 30px 30px;
+    }
+}
