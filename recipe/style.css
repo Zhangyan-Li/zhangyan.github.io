@@ -1,0 +1,14 @@
+.photo {
+  width: 200px;
+  height: auto;
+}
+body {
+  text-align: center;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bold;
+  background-color: rgb(255, 217, 0);
+  letter-spacing: 5px;
+  word-spacing: 10px;
+  margin: 0;
+  padding: 0;
+}
