@@ -1,14 +1,90 @@
-.photo {
-  width: 200px;
-  height: auto;
-}
+
+/* Whole page */
+
+/* Whole page */
 body {
-  text-align: center;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-weight: bold;
   background-color: rgb(255, 217, 0);
-  letter-spacing: 5px;
-  word-spacing: 10px;
+  color: black;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: bold;
+  text-align: center;
   margin: 0;
-  padding: 0;
+  padding: 30px 40px;
+  letter-spacing: 3px;
+  word-spacing: 5px;
+}
+
+/* Main title */
+h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin: 25px auto 60px;
+  padding-bottom: 25px;
+  border-bottom: 5px solid black;
+}
+
+/* Step titles */
+h2 {
+  font-size: 30px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  margin: 35px auto 25px;
+}
+
+/* Paragraphs */
+p {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+
+/* Photos */
+.photo {
+  width: 300px;
+  height: 380px;
+  object-fit: cover;
+  margin: 8px;
+  border: 3px solid black;
+  vertical-align: middle;
+}
+
+/* Images become slightly bigger when hovered */
+.photo:hover {
+  transform: scale(1.03);
+}
+
+/* Horizontal lines */
+hr {
+  border: none;
+  border-top: 3px solid black;
+  margin: 55px auto;
+  width: 80%;
+}
+
+/* Smaller screens */
+@media (max-width: 700px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+  }
+
+  h2 {
+    font-size: 23px;
+    letter-spacing: 2px;
+  }
+
+  .photo {
+    width: 42%;
+    height: 250px;
+    margin: 5px;
+  }
 }
