@@ -3,18 +3,29 @@ body {
     margin: 0 auto;          /* 整个容器水平居中 */
     text-align: center;     /* 里面的文字居中 */
     padding: 20px;           /* 内边距 */
-    background-color: black;
+    background: radial-gradient(ellipse at left, #000000, #740000, #ff0000, #ff5500, #ffde04, #ffffff); /* 渐变背景颜色 */
+    background-size: 200% 100%;
+    animation: redglow 5s ease-in-out infinite alternate;
+    /* 渐变背景 */
     text-align: center;
     
     font-weight: bold;
     font-family: "Silkscreen"
     }
+  @keyframes redglow {
+    from{background-position: left;
+    }
+    to{background-position: right;
+    }
+  }
 h1{
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 80px;
+  text-shadow: 0 0 5px red, 0 0 15px orangered;
+  animation: heat 0.15s infinite alternate;
 }
 h2{
-  color: white;
+  color: rgb(0, 0, 0);
 
   font-size: 10px;
 }
@@ -23,5 +34,5 @@ a,
 a:visited,
 a:hover,
 a:active {
-    color: red;
+    color: rgb(101, 2, 2);
 }
