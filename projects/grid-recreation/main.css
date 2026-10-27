@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  color: rgb(68, 50, 53);
+  background: rgb(240, 232, 222);
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+/* header: logo + nav, centered */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 60px 24px;
+}
+
+.logo {
+  font-size: 80px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+nav a,
+.date {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-decoration: none;
+}
+
+/* two equal columns of cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* white frame around the color block */
+.frame {
+  background: white;
+  padding: 20px;
+}
+
+.swatch {
+  aspect-ratio: 16 / 10;
+}
+
+/* name on the left, date on the right */
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.card-top h3 {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+}
+
+/* figma sketch */
+.sketch {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 24px 0;
+}
+
+.sketch img {
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  padding: 60px 24px;
+}
+
+/* color blocks */
+.s1 { background: linear-gradient(135deg, #ffb38a, #ffe9a6, #9fd3ff); }
+.s2 { background: linear-gradient(135deg, #ff2fb3, #3b2bff); }
+.s3 { background: radial-gradient(circle at 70% 30%, #b28cff, #1b1f4a 60%); }
+.s4 { background: linear-gradient(135deg, #111, #111 50%, #b6ff3b); }
+
+/* phone: one column */
+@media (max-width: 640px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
