@@ -1,0 +1,18 @@
+body {
+    background-image: url("sunflower.jpg");
+    background-repeat: no-repeat;
+    text-align: center;
+    color: rgb(251, 213, 59);
+    font-family: 'Silkscreen';
+}
+.long-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+    color: rgb(251, 213, 59);
+}
